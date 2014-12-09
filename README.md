@@ -185,6 +185,9 @@ This window has only 1 pane with a vim session open with a vertical split of `Pt
 
 ![](http://i.imgur.com/MXDvFc7.png)
 
+After completing this, de-attach this session!!
+(Check cheatsheet for this)
+
 #### Task 2 - vimtutor
 
 First thing first, you need to rename this session to `vimtutor`.
@@ -193,8 +196,35 @@ Here you only need to create a single window tmux session with a vertical split.
 
 ![](http://i.imgur.com/enuCcql.png)
 
+After completing this, de-attach this session!!
+(Check cheatsheet for this)
+
 ### Part 4 - Course Eval (Optional)
 
 Please take some time this week and next to fill out your course eval.
 
 - [http://www.purdue.edu/eval](http://www.purdue.edu/eval)
+
+
+## Grading
+Have a terminal open in the lab directory when you call your TA over.
+
+1. Check that errors.txt has no more errors.
+
+2. grep for BoilerMake in the jump_around file
+  ```
+  grep "BoilerMake" jump_around.txt
+  ```
+
+3. Check output of ruby program (`ruby animal-stats.rb`), output should look like this
+
+```
+There are 591 animals with an average letter count of 10.
+Here are the beginning letter frequency of all of the animals:
+"A"=>51
+"B"=>66
+"C"=>54
+...
+```
+
+4. Instruct the student to attach the first session (should be called `rubyAndJava`), then de-attach, then attach the second session (should be called `vimtutor`)
