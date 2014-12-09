@@ -41,7 +41,7 @@ You can find the commands in the Vim Cheatsheet.
 
 2.  **Remove duplicate lines**
 
-    > BIG HINT: The commands listed here correspond to commands that can be found in the [Vim Cheatsheet](https://github.com/ClydeByrdIII/cs190lab7/blob/master/cheatsheet.md), most are under the section "Editing Text in Command Mode"
+    > BIG HINT: The commands listed here correspond to commands that can be found in the [Vim Cheatsheet](https://github.com/PurdueCS190/syllabus/blob/master/lecture08-vim-sublime-tmux.md), most are under the section "Editing Text in Command Mode"
 
     ```
     GOAL:       Remove duplicated lines appearing on lines 4 and 5.
@@ -104,16 +104,16 @@ For part two we will add a couple of settings to your .vimrc that maybe useful.
 
 3. Jump to the end of the line by typing `$`.
 
-4. Press `i` to enter *Insert Mode*.
+4. Press `o`, this will put you in *Insert Mode* and add a new line under your cursor. This is one of vim's MANY handy shortcuts.
 
-5. Insert a new line at the bottom of the file, and paste the code below on that line.
+5. On this newly created line, in insert mode(you should be from the last step), paste the code below on that line.
 
     > If you try and paste code without being in *Insert Mode*, each character that is part of the
     > pasted string will act as input to Vim.
     >
     > e.g., if you paste the word `insert` while still in *Command Mode*, `i` will trigger *Insert Mode* and then `nsert` will be written in the file.
 
-    ```
+    ```vimscript
     " Always display the current cursor position in the lower right corner of the Vim window.
     set ruler
     " Press space to clear search highlighting and any message already displayed.
