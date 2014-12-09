@@ -14,6 +14,18 @@ cd; curl -S https://raw.githubusercontent.com/PurdueCS190/lab8/master/init.sh | 
 
 ### Part 2 - Sublime
 
+#### Setup
+
+First you need to install Sublime on your system. Run the following commands
+
+```bash
+mkdir -p bin
+wget http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%202.0.2%20x64.tar.bz2
+tar jxf Sublime\ Text\ 2.0.2\ x64.tar.bz2 -C ~/bin
+```
+
+Run Sublime with `sublime_text`!
+
 In this part of the lab you are given two files `animals.txt` and `animal-stats.rb`. Your goal is to use Sublime to exit `animals.txt`, so you can insert it into `animal-stats.rb`, so that it can run properly.
 
 #### Multiple Cursors & Animals.txt
