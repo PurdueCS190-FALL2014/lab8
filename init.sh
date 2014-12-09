@@ -14,5 +14,9 @@ wget https://raw.githubusercontent.com/liaohuqiu/android-Ultra-Pull-To-Refresh/m
 wget https://raw.githubusercontent.com/rails/rails/master/activerecord/lib/active_record/attribute.rb
 wget https://raw.githubusercontent.com/rails/rails/master/activerecord/lib/active_record/core.rb
 
+# vim files
+wget https://raw.githubusercontent.com/PurdueCS190/lab8/master/errors.txt
+wget https://raw.githubusercontent.com/PurdueCS190/lab8/master/jump_around.txt
+
 
 echo -e '\ndirectory ~/cs190lab8 reset!'

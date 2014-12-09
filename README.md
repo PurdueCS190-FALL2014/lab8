@@ -12,6 +12,123 @@ cd; curl -S https://raw.githubusercontent.com/PurdueCS190/lab8/master/init.sh | 
 
 ### Part 1 - Vim
 
+NOTE: Don't do this if you already have a .vimrc customized to your liking!!!
+```bash
+wget -O ~/.vimrc https://raw.githubusercontent.com/PurdueCS190/lab8/master/vimrc
+```
+
+## Part 1 - Editing example files with vim ##
+
+**NOTE: DO NOT USE INSERT MODE UNLESS TOLD TO DO SO. USE THE COMMANDS DESCRIBED TO FIX THE ERRORS.**
+
+----
+
+### errors.txt ###
+
+This file contains duplicate lines, words, and misspellings that need to be fixed. You need to edit this file using Vim and fix the errors.
+
+You can find the commands in the Vim Cheatsheet.
+
+> This is the time you should probably open up the [Vim Cheatsheet](https://github.com/PurdueCS190/syllabus/blob/master/lecture08-vim-sublime-tmux.md) mentioned in the beginning of the lab :)
+
+1.  Open `errors.txt` in Vim
+    ```bash
+    vim errors.txt
+    ```
+    ![Original File](http://i.imgur.com/qQeNKfY.png)
+
+    The file originally looks like the above text. As you can see there are multiple errors in this text file, such as lines 3-6 being duplicated and lines 8 having a mispelled 'I'.
+
+2.  **Remove duplicate lines**
+
+    > BIG HINT: The commands listed here correspond to commands that can be found in the [Vim Cheatsheet](https://github.com/ClydeByrdIII/cs190lab7/blob/master/cheatsheet.md), most are under the section "Editing Text in Command Mode"
+
+    ```
+    GOAL:       Remove duplicated lines appearing on lines 4 and 5.
+    COMMANDS:   delete current line, delete n lines.
+    ```
+
+    ![After removing duplicated lines](http://i.imgur.com/4B8EFn2.png)
+
+3.  **Remove duplicate words**
+    ```
+    GOAL:       Remove duplicated words appearing on line 5
+    COMMANDS:   delete word, delete n words
+    ```
+
+    ![After deleting duplicated words](http://i.imgur.com/lDA7Xpu.png)
+
+3.  **Fix misspellings**
+    ```
+    GOAL:       Remove characters causing misspellings on lines 6 and 7.
+    COMMANDS:   Remove character
+    ```
+
+    ![After fixing simple misspellings](http://i.imgur.com/gXR1KCt.png)
+
+4.  **Save the file and quit**
+    ```
+    :wq
+    ```
+----
+
+### jump_around.txt ###
+
+This is a really long file...actually a book called The Young Engineers. There are little messages interleaved in the middle.
+
+1.  Open `jump_around.txt` in Vim.
+2.  Press `G` (shift and g at the same time) to go the very end of the file
+3.  Type `gg` to go to the beginning of the file
+5.  Type `:462` to go to line 462. Mark down the name of Chapter II found on this line.
+6.  Type `:3403` to go to line 3403.
+7.  Type `$` to go to the end of line 3403.
+8.  Type `^` to go to the beginning of line 3403.
+9.  Hit `i` to go into insert mode.
+10. Add the word "BoilerMake" to the end of this line.
+11. Save and quit this file. HINT: (w)rite and (q)uit
+
+## Part Two - Editing the .vimrc ##
+
+### What is the .vimrc? ###
+The vimrc file contains optional runtime configuration settings that get loaded each time Vim is run. This means that what ever the settings you have in this file, they will be executed when Vim is started.
+
+For part two we will add a couple of settings to your .vimrc that maybe useful.
+
+1. Open `~/.vimrc` with Vim
+    ```bash
+    vim ~/.vimrc
+    ```
+![If you downloaded the .vimrc during setup it should look like this:](http://i.imgur.com/0O6bRKg.png)
+
+2. Jump to the bottom of the file using `Shift + G`.
+
+3. Jump to the end of the line by typing `$`.
+
+4. Press `i` to enter *Insert Mode*.
+
+5. Insert a new line at the bottom of the file, and paste the code below on that line.
+
+    > If you try and paste code without being in *Insert Mode*, each character that is part of the
+    > pasted string will act as input to Vim.
+    >
+    > e.g., if you paste the word `insert` while still in *Command Mode*, `i` will trigger *Insert Mode* and then `nsert` will be written in the file.
+
+    ```
+    " Always display the current cursor position in the lower right corner of the Vim window.
+    set ruler
+    " Press space to clear search highlighting and any message already displayed.
+    nnoremap <silent> <Space> :silent noh<Bar>echo<CR>
+    ```
+
+3. Now save the file and quit
+    ```
+    <ESC>
+    :wq
+    ```
+4. Now open the file again in vim and you should see the current cursor position in the lower right of the window.
+
+![It should look similar to this](http://i.imgur.com/ENnvQXA.png)
+
 ### Part 2 - Sublime
 
 #### Setup
