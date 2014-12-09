@@ -6,6 +6,7 @@ Before starting the lab, **OPEN THE [REFERENCE SHEET](https://github.com/PurdueC
 
 ### The Magic Command ###
 
-**ONLY RUN THIS ONCE.**
+```bash
+cd; curl -S https://raw.githubusercontent.com/PurdueCS190/lab8/master/init.sh | bash
+```
 
-        cd; curl -S 
