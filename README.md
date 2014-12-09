@@ -22,6 +22,7 @@ First you need to install Sublime on your system. Run the following commands
 mkdir -p bin
 wget http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%202.0.2%20x64.tar.bz2
 tar jxf Sublime\ Text\ 2.0.2\ x64.tar.bz2 -C ~/bin
+PATH=$HOME/bin/Sublime\ Text\ 2
 ```
 
 Run Sublime with `sublime_text`!
