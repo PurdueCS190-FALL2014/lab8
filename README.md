@@ -100,7 +100,7 @@ For part two we will add a couple of settings to your .vimrc that maybe useful.
     ```
 ![If you downloaded the .vimrc during setup it should look like this:](http://i.imgur.com/0O6bRKg.png)
 
-2. Jump to the bottom of the file using `Shift + G`.
+2. Jump to the bottom of the file using `Shift + g`.
 
 3. Jump to the end of the line by typing `$`.
 
@@ -173,13 +173,13 @@ For part 3 of this lab you are to setup 2 tmux sessions, one called `rubyAndJava
 
 For these 2 sessions you need to make them look like they do in the screenshots below.
 
-#### Task 1 - rubyAndJava
+#### The Task
 
 First thing first, you need to rename this session to `rubyAndJava`.
 
 Window #1
 
-This window has 2 panes split horizontally. The first pane has vim open with a vertical split of `attribute.rb` and `core.rb`, and the second a zsh shell.
+This window has 2 panes split horizontally with the top one being split again vertically. The top pane has a vertical split between two vim sessions with `attribute.rb` and `core.rb`, and the bottom one should just contain your default shell.
 
 ![](http://i.imgur.com/MZQjXrO.png)
 
@@ -188,17 +188,6 @@ Window #2
 This window has only 1 pane with a vim session open with a vertical split of `PtrClassicDefaultHeader.java` and `PtrFrameLayout.java`.
 
 ![](http://i.imgur.com/MXDvFc7.png)
-
-After completing this, de-attach this session!!
-(Check cheatsheet for this)
-
-#### Task 2 - vimtutor
-
-First thing first, you need to rename this session to `vimtutor`.
-
-Here you only need to create a single window tmux session with a vertical split.  The first pane has `vimtutor` open and the second just has an open zsh shell.
-
-![](http://i.imgur.com/enuCcql.png)
 
 After completing this, de-attach this session!!
 (Check cheatsheet for this)
@@ -236,4 +225,4 @@ Here are the beginning letter frequency of all of the animals:
 ...
 ```
 
-4. Instruct the student to attach the first session (should be called `rubyAndJava`), then de-attach, then attach the second session (should be called `vimtutor`)
+4. Instruct the student to attach the tmux session from earlier (should be called `rubyAndJava`), then de-attach
