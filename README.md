@@ -113,7 +113,7 @@ For part two we will add a couple of settings to your .vimrc that maybe useful.
     >
     > e.g., if you paste the word `insert` while still in *Command Mode*, `i` will trigger *Insert Mode* and then `nsert` will be written in the file.
 
-    ```vimscript
+    ```VimL
     " Always display the current cursor position in the lower right corner of the Vim window.
     set ruler
     " Press space to clear search highlighting and any message already displayed.
