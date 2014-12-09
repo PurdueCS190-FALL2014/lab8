@@ -6,6 +6,9 @@ rm -rf ~/cs190lab8
 mkdir ~/cs190lab8
 cd ~/cs190lab8
 
+wget https://raw.githubusercontent.com/PurdueCS190/lab8/master/animal-stats.rb
+wget https://raw.githubusercontent.com/PurdueCS190/lab8/master/animals.txt
+
 wget https://raw.githubusercontent.com/liaohuqiu/android-Ultra-Pull-To-Refresh/master/ptr-lib/src/in/srain/cube/views/ptr/PtrFrameLayout.java
 wget https://raw.githubusercontent.com/liaohuqiu/android-Ultra-Pull-To-Refresh/master/ptr-lib/src/in/srain/cube/views/ptr/PtrClassicDefaultHeader.java
 wget https://raw.githubusercontent.com/rails/rails/master/activerecord/lib/active_record/attribute.rb
