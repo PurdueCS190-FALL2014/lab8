@@ -179,7 +179,7 @@ First thing first, you need to rename this session to `rubyAndJava`.
 
 Window #1
 
-This is window has 2 panes split horizontally. The first pane has vim open with a vertical split of `attribute.rb` and `core.rb`, and the second a zsh shell.
+This window has 2 panes split horizontally. The first pane has vim open with a vertical split of `attribute.rb` and `core.rb`, and the second a zsh shell.
 
 ![](http://i.imgur.com/MZQjXrO.png)
 

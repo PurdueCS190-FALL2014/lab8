@@ -1,5 +1,5 @@
 # copy and paste your array here!!!
-animals = 
+animals = ['ntaoehu', 'enothui']
 
 # prints the average length of each animal string
 def average_length arr
