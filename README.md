@@ -210,6 +210,11 @@ Please take some time this week and next to fill out your course eval.
 - [http://www.purdue.edu/eval](http://www.purdue.edu/eval)
 
 
+We've also created our own course survey. It will make the course better:)
+
+- [http://goo.gl/forms/BVj4IBHeuo](http://goo.gl/forms/BVj4IBHeuo)
+
+
 ## Grading
 Have a terminal open in the lab directory when you call your TA over.
 
