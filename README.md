@@ -142,7 +142,7 @@ tar jxf Sublime\ Text\ 2.0.2\ x64.tar.bz2 -C ~/bin
 PATH=$PATH:$HOME/bin/Sublime\ Text\ 2
 ```
 
-Run Sublime with `sublime_text`!
+Run Sublime with `sublime_text &`!
 
 > If you want this to work permantetly, add `export PATH=$HOME/bin/Sublime\ Text\ 2` to the end of your .zshrc.
 
