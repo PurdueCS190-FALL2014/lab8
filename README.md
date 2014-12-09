@@ -14,6 +14,24 @@ cd; curl -S https://raw.githubusercontent.com/PurdueCS190/lab8/master/init.sh | 
 
 ### Part 2 - Sublime
 
+In this part of the lab you are given two files `animals.txt` and `animal-stats.rb`. Your goal is to use Sublime to exit `animals.txt`, so you can insert it into `animal-stats.rb`, so that it can run properly.
+
+#### Multiple Cursors & Animals.txt
+
+`Animals.txt` is a huge list of animals, you need to convert it into an `Array` of `Strings` like so.
+
+![](http://i.imgur.com/ZM5k5GW.png)
+
+to
+
+![](http://i.imgur.com/Dvfy98c.png)
+
+Once you have this array, you need to copy and paste it into `animal-stats.rb` like so.
+
+![](http://i.imgur.com/7RjcXNt.png)
+
+Then you can run `ruby animal-stats.rb`!
+
 ### Part 3 - Tmux
 
 For part 3 of this lab you are to setup 2 tmux sessions, one called `rubyAndJava` and one called `vimtutor`. Here is an example of what you should see when you run `tmux ls`.
